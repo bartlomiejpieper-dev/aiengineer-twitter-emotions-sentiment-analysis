@@ -1,0 +1,36 @@
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environments
+**/.venv/
+**/venv/
+**/env/
+**/.venv/
+
+# Ignore Poetry specific files
+**/poetry.lock     
+
+# Ignore build artifacts
+**/dist/
+**/build/
+**/*.egg-info/
+
+# Ignore IDE/project files
+.idea/
+# .vscode/s
+*.sublime-project
+*.sublime-workspace
+
+# Ignore logs
+*.log
+
+# Ignore environment variables (if any)
+.env
+
+# Ignore files in src
+src/mlruns/*
+src/models/*
+!src/models/.gitkeep
+!src/models/GRU\ \[lstm_units=32,\ dropout=0.4,\ dense_units=32\]/
